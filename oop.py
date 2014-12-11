@@ -1,6 +1,6 @@
 class yolo:
     empcount=0
-    def _init_(self, name, salary):
+    def __init__(self, name, salary):
         self.name = name
         self.salary = salary
         yolo.empcount += 1
@@ -9,11 +9,11 @@ class yolo:
         print "total Emp %d" % yolo.empcount
 
     def displayemp(self):
-        print "Name: ",self.name, "sal:", self.salary
+        print "Name: ", self.name, "sal:", self.salary
 
 
-emp1 = yolo(chuck, 5)
-emp2 = yolo(dill, 6)
+emp1 = yolo("chuck", 5)
+emp2 = yolo("dill", 6)
 
 
 emp1.displayemp()
